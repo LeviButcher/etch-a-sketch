@@ -1,0 +1,68 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  font-size: 10pt;
+}
+
+header{
+  text-align: center;
+  background-color: gray;
+  padding: 0.5vh;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+}
+
+header > h1{
+  flex: 1;
+}
+
+main{
+  background-color: #aaaad6;
+  height: 87vh;
+  padding: 3vh;
+}
+p{
+  margin: 0;
+}
+
+#etch-a-sketch{
+  position: relative;
+  height: 700px;
+  background-color: #cc4b4b;
+  width: 700px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.container {
+  position: relative;
+  top: 25px;
+  background-color: white;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  display: grid;
+}
+
+.container > div {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+
+.knob{
+  background-color: #d0bdbd;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 25px;
+}
+
+.knob-left{
+  left: 25px;
+}
+
+.knob-right{
+  right: 25px;
+}
