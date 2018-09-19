@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html, body{
   padding: 0;
   margin: 0;
@@ -7,9 +13,9 @@ html, body{
 
 header{
   text-align: center;
+  padding: 5px;
   background-color: #2A3140;
-  padding: 0.5vh;
-  height: 6vh;
+  height: 5vh;
   display: flex;
   align-items: center;
 }
@@ -19,9 +25,12 @@ header > h1{
 }
 
 main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #D9D8C7;
-  height: 87vh;
-  padding: 3vh;
+  min-height: 95vh;
+  padding: 15px;
   color: #2A3140;
 }
 p{
@@ -30,12 +39,10 @@ p{
 
 #etch-a-sketch{
   position: relative;
-  height: 700px;
-  /* background-color: #cc4b4b; */
+  height: 500px;
   background-color: #D93240;
   color: #2A3140;
-  width: 700px;
-  margin: auto;
+  width: 600px;
   border-radius: 15px;
   box-shadow: 0px 2px 5px 1px;
 }
@@ -44,8 +51,8 @@ p{
   position: relative;
   top: 25px;
   background-color: white;
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 500px;
   margin: auto;
   display: grid;
   box-shadow: 0px 2px 5px 1px;
@@ -91,7 +98,6 @@ p{
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
-
 }
 
 .face-left {
@@ -115,7 +121,6 @@ p{
 }
 
 #info {
-  margin-top: 10px;
   text-align: center;
 }
 
